@@ -16,6 +16,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let 廣播群組 = 0
 廣播群組 = 0
+radio.setTransmitPower(3)
 basic.forever(function () {
     radio.setGroup(廣播群組)
     radio.sendString("\"I got you\"")
