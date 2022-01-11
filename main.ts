@@ -20,5 +20,5 @@ radio.setTransmitPower(3)
 basic.forever(function () {
     radio.setGroup(廣播群組)
     radio.sendString("\"I got you\"")
-    basic.pause(200)
+    basic.pause(500)
 })
