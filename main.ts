@@ -11,6 +11,8 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         鎖 = 1
     }
+    basic.pause(2000)
+    basic.clearScreen()
 })
 radio.onReceivedString(function (receivedString) {
     basic.showIcon(IconNames.Heart)
