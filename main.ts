@@ -25,7 +25,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let 鎖 = 0
 let 廣播群組 = 0
-廣播群組 = 0
+廣播群組 = 1
 鎖 = 1
 radio.setTransmitPower(3)
 basic.forever(function () {
