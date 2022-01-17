@@ -22,9 +22,31 @@ input.onButtonPressed(Button.AB, function () {
 })
 radio.onReceivedString(function (receivedString) {
     if (鎖 == 1) {
-        basic.showIcon(IconNames.Heart)
-        basic.pause(100)
-        basic.showIcon(IconNames.SmallHeart)
+        if (廣播群組 == 1) {
+            basic.showIcon(IconNames.Pitchfork)
+            basic.pause(100)
+            basic.showIcon(IconNames.Cow)
+        } else if (廣播群組 == 2) {
+            basic.showLeds(`
+                . . # . .
+                . . # # .
+                . . # . .
+                # # # # #
+                . # # # .
+                `)
+            basic.pause(100)
+            basic.showIcon(IconNames.SmallSquare)
+        } else if (廣播群組 == 3) {
+            basic.showIcon(IconNames.StickFigure)
+            basic.pause(100)
+            basic.showIcon(IconNames.Target)
+        } else if (廣播群組 == 4) {
+            basic.showIcon(IconNames.Duck)
+            basic.pause(100)
+            basic.showIcon(IconNames.Tortoise)
+        } else {
+        	
+        }
     }
 })
 input.onButtonPressed(Button.B, function () {
